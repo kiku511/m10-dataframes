@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 # Exercise 7: Husky Football 2016 Season
 # Read in the Husky Football 2016 game data into a variable called `husky.games.2016`
 husky.games.2016 <- read.csv('data/huskies_2016.csv')
-
-=======
-# Exercise 6: Husky Football 2015 Season
-# Read in the Husky Football 2015 game data into a variable called `husky.games.2015`
->>>>>>> Fixed exercise numbers
 
 # Create a vector of the teams that the Huskies played against during that season
 # Call this vector `not.huskies`. You'll need to convert this column to a vector
