@@ -8,15 +8,16 @@ points <- c(12, 3, 37, 27)
 points.conceded <- c(10, 9, 18, 17)
 
 # Combine your two vectors into a dataframe
-
+games <- data.frame(points, points.conceded)
 
 # Create a new column "diff" that is the difference in points
-
+games$diff <- games$points - games$points.conceded
 
 # Create a new column "won" which is TRUE if the Seahawks wom
-
+games$won <- (games$diff > 0)
 
 # Create a vector of the opponents
-
+opponents <- c('Dolphins', 'Rams', '49ers', 'Jets')
 
 # Assign your dataframe rownames of their opponents
+rownames(games) <- opponents
